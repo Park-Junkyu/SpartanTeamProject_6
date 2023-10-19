@@ -3,7 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - Item
+  - Enemy
+  - Weapon_Default
+  - Weapon_Weapon1
+  - Weapon_Weapon2
+  - Weapon_Weapon3
+  - Weapon_Weapon4
+  - Weapon_Weapon5
+  - Weapon_Weapon6
+  - Weapon_Weapon7
+  - Weapon_Weapon8
+  - Weapon_Weapon9
+  - ProjectileSpawnPoint
+  - Undefined
+  - EnemyWeapon1
   layers:
   - Default
   - TransparentFX
@@ -11,7 +27,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Platform
   - 
   - 
   - 
