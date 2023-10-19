@@ -8,7 +8,6 @@ public class EnemyAttackState : EnemyGroundState
     {
         base.Enter();
         stateMachine.Enemy.Animator.SetTrigger(stateMachine.Enemy.AnimData.AttackParameterHash);
-        Debug.Log("ø©±‚ »£√‚µ≈?0");
         CallEnemyShoot();
     }
 

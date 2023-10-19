@@ -134,7 +134,6 @@ public class EnemyBaseState : IState
 
     protected void CallEnemyShoot()
     {
-        Debug.Log("ø©±‚ »£√‚µ≈?5");
         stateMachine.Enemy.EnemyShoot();
     }
 }

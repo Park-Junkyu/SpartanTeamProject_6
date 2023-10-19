@@ -14,11 +14,9 @@ public class Porjectiles : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log($"Ãæµ¹ {collision}");
         if (collision.gameObject.CompareTag("Ground"))
         {
             Vector3Int cellPos = collision.gameObject.GetComponent<Tilemap>().WorldToCell(transform.position);
-            Debug.Log($"¼¿Æ÷½º {cellPos}");
             collision.gameObject.GetComponent<Tilemap>().SetTile(new Vector3Int(cellPos.x, cellPos.y - 1), null);
             collision.gameObject.GetComponent<Tilemap>().SetTile(new Vector3Int(cellPos.x, cellPos.y), null);
             collision.gameObject.GetComponent<Tilemap>().SetTile(new Vector3Int(cellPos.x, cellPos.y + 1), null);

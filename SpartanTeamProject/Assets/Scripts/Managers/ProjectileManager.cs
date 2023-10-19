@@ -39,7 +39,6 @@ public class ProjectileManager : MonoBehaviour
         Vector3 dir = Quaternion.AngleAxis(playerController.aimAngle, Vector3.forward) * Vector3.right;
         float shootPower = playerController.currentPower / 5;
         projectile.GetComponent<Rigidbody2D>().AddForce(dir * shootPower, ForceMode2D.Impulse);
-        Debug.Log($"shootPoewr: {shootPower}");
 
     }
 
@@ -50,7 +49,6 @@ public class ProjectileManager : MonoBehaviour
         else
             selectedProjectile = projectiles[int.Parse(tag[13].ToString())];
 
-        Debug.Log(selectedProjectile);
     }
     public void EnemyShoot(Vector3 shootTip, GameObject prefab)
     {

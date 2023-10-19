@@ -55,7 +55,6 @@ public class PlayerController : MonoBehaviour
 
             if (isSetDir && Input.GetMouseButtonDown(0))
             {
-                Debug.Log($"마우스 클릭 {isSetDir} {Time.frameCount.ToString()}");
                 isSetPower = true;
                 isSetDir = false;
                 freezeMove = true;
@@ -75,7 +74,6 @@ public class PlayerController : MonoBehaviour
             if (isShoot && Input.GetMouseButtonUp(0))
             {
                 isSetPower = false;
-                Debug.Log("발사");
                 anim.SetTrigger("isShoot");
                 isShoot = false;
                 // 발사 로직
@@ -89,7 +87,6 @@ public class PlayerController : MonoBehaviour
 
     public void SettingDir()
     {
-        Debug.Log($"마우스 버튼 다운 {Input.GetMouseButtonDown(0)} 프레임카운트 {Time.frameCount} 이즈셋dir {isSetDir}");
         StartCoroutine(activateSetDir());
     }
 
